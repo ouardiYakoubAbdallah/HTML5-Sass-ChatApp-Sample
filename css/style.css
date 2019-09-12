@@ -146,6 +146,11 @@ hr {
   margin: 3px;
 }
 
+.chat-panel {
+  display: -ms-grid;
+  display: grid;
+}
+
 .chat-bubble {
   padding: 10px 14px;
   background: #eee;
@@ -165,19 +170,24 @@ hr {
   margin-top: -10px;
 }
 
-.chat-bubble--left:after {
+.chat-bubble--sender {
+  float: left;
+}
+
+.chat-bubble--sender:after {
   left: 0;
   border-right-color: #eee;
   border-left: 0;
   margin-left: -20px;
 }
 
-.chat-bubble--right {
+.chat-bubble--reciver {
+  float: right;
   background-color: cornflowerblue;
   color: #FFFFFF;
 }
 
-.chat-bubble--right:after {
+.chat-bubble--reciver:after {
   right: 0;
   border-left-color: cornflowerblue;
   border-right: 0;

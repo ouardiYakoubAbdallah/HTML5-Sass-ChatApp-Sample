@@ -129,6 +129,11 @@ hr {
     
 }
 
+.chat-panel {
+    display: grid;
+
+}
+
 .chat-bubble {
     padding: 10px 14px;
     background: #eee;
@@ -147,7 +152,8 @@ hr {
       margin-top: -10px;
     }
     
-    &--left {
+    &--sender {
+        float: left;
        &:after {
             left: 0;
             border-right-color: #eee;
@@ -156,7 +162,8 @@ hr {
       }
     }
     
-    &--right {
+    &--reciver {
+        float: right;
         background-color: cornflowerblue;
         color: #FFFFFF;
         &:after {
