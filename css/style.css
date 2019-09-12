@@ -73,7 +73,7 @@ hr {
   margin: 60px auto;
   background: #FFFFFF;
   padding: 0;
-  border-radius: 7px;
+  border-radius: 0px;
 }
 
 .profile-img {
@@ -85,7 +85,7 @@ hr {
 .setting-tray {
   background-color: #EEEEEE;
   padding: 10px 15px;
-  border-radius: 7px;
+  border-radius: 0px;
 }
 
 .setting-nav {
@@ -122,11 +122,14 @@ hr {
 }
 
 .current-friend-box {
-  padding: 10px 15px;
+  padding: 11px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   vertical-align: baseline;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 10px 1px 10px  grey;
+          box-shadow: 10px 1px 10px  grey;
 }
 
 .content-msg {
@@ -141,5 +144,43 @@ hr {
 
 .content-msg p {
   margin: 3px;
+}
+
+.chat-bubble {
+  padding: 10px 14px;
+  background: #eee;
+  margin: 10px 30px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.chat-bubble:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom: 0;
+  margin-top: -10px;
+}
+
+.chat-bubble--left:after {
+  left: 0;
+  border-right-color: #eee;
+  border-left: 0;
+  margin-left: -20px;
+}
+
+.chat-bubble--right {
+  background-color: cornflowerblue;
+  color: #FFFFFF;
+}
+
+.chat-bubble--right:after {
+  right: 0;
+  border-left-color: cornflowerblue;
+  border-right: 0;
+  margin-right: -20px;
 }
 /*# sourceMappingURL=style.css.map */
