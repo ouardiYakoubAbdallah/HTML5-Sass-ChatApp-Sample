@@ -1,3 +1,29 @@
+$image-size: 50px;
+$border-radius: 7px;
+
+%sys-icon {
+    font-size: 25px;
+    color: grey;
+    transition: .3s;
+    vertical-align: middle;
+    &:hover{
+        color:cornflowerblue;
+        cursor: pointer;
+    }
+}
+
+%sys-input {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+    &:hover::placeholder {
+        color:cornflowerblue;
+        font-weight: 300;
+    }
+    
+}
+
 body {
     background-image: url("../img/background.jpg");
     background-size: cover;
@@ -9,12 +35,35 @@ body {
     margin: 60px auto;
     background: #FFFFFF;
     padding: 0;
-    border-radius: 5px;
+    border-radius: $border-radius;
 }
 
-$image-size: 50px;
-.profile-image {
+.profile-img {
     width: $image-size;
     height: $image-size;
     border-radius: $image-size / 2;
+}
+
+.setting-tray {
+    background-color: #EEEEEE;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+    .setting-nav {
+        float: right;
+        i {
+            @extend %sys-icon;
+            margin: 10px 15px;
+        }
+    }
+}
+
+.search-box {
+    background-color: #FAFAFA;
+    padding: 10px 15px;
+    input {
+        @extend %sys-input;
+    }
+    i {
+        @extend %sys-icon;
+    }
 }

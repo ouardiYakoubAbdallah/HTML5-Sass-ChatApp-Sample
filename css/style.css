@@ -1,3 +1,43 @@
+.setting-tray .setting-nav i, .search-box i {
+  font-size: 25px;
+  color: grey;
+  -webkit-transition: .3s;
+  transition: .3s;
+  vertical-align: middle;
+}
+
+.setting-tray .setting-nav i:hover, .search-box i:hover {
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.search-box input {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  width: 80%;
+}
+
+.search-box input:hover::-webkit-input-placeholder {
+  color: cornflowerblue;
+  font-weight: 300;
+}
+
+.search-box input:hover:-ms-input-placeholder {
+  color: cornflowerblue;
+  font-weight: 300;
+}
+
+.search-box input:hover::-ms-input-placeholder {
+  color: cornflowerblue;
+  font-weight: 300;
+}
+
+.search-box input:hover::placeholder {
+  color: cornflowerblue;
+  font-weight: 300;
+}
+
 body {
   background-image: url("../img/background.jpg");
   background-size: cover;
@@ -9,12 +49,31 @@ body {
   margin: 60px auto;
   background: #FFFFFF;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
-.profile-image {
+.profile-img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
+}
+
+.setting-tray {
+  background-color: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
+.setting-tray .setting-nav {
+  float: right;
+}
+
+.setting-tray .setting-nav i {
+  margin: 10px 15px;
+}
+
+.search-box {
+  background-color: #FAFAFA;
+  padding: 10px 15px;
 }
 /*# sourceMappingURL=style.css.map */
