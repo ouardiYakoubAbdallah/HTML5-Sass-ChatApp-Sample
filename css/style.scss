@@ -16,7 +16,8 @@ $border-radius: 0px;
     background-color: #FFFFFF;
     border: none;
     border-radius: 50px;
-    width: 80%;
+    width: 85%;
+    padding: 6px 12px;
     &:hover::placeholder {
         color:cornflowerblue;
         font-weight: 300;
@@ -38,14 +39,21 @@ hr {
     width: 60%;
 }
 
-.row {
+.window {
     display: flex;
     flex-direction: row;
 }
 
 .main {
     width: 100%;
+    border: lightgrey 1px solid;
+    position: relative;
 }
+
+.sidebar {
+    border: lightgrey 1px solid;
+}
+
 
 
 .text-muted {
@@ -84,6 +92,7 @@ hr {
 .search-box {
     background-color: #FAFAFA;
     padding: 10px 15px;
+    display: flex;
     input {
         @extend %sys-input;
     }
@@ -112,7 +121,7 @@ hr {
     display: flex;
     vertical-align: baseline;
     background-color: #FFFFFF;
-    box-shadow: 10px 1px 10px  grey;
+    box-shadow: 0px 1px 10px  lightgrey;
 }
 
 .content-msg {
@@ -175,6 +184,20 @@ hr {
     }
   }
   
+  .chat-box {
+    @extend .search-box;
+    background: #eee;
+    padding: 10px 15px;
+    align-items: center;
+    margin-top: 19px;
+    bottom: 0;
+    position: absolute;
+    width:98%;
+      i {
+          margin: 0 5px;
+          
+      }
+  }
   
 
 

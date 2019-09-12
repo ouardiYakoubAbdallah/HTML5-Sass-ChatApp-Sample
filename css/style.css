@@ -1,4 +1,4 @@
-.setting-nav i, .search-box i {
+.setting-nav i, .search-box i, .chat-box i {
   font-size: 25px;
   color: grey;
   -webkit-transition: .3s;
@@ -6,34 +6,35 @@
   vertical-align: middle;
 }
 
-.setting-nav i:hover, .search-box i:hover {
+.setting-nav i:hover, .search-box i:hover, .chat-box i:hover {
   color: cornflowerblue;
   cursor: pointer;
 }
 
-.search-box input {
+.search-box input, .chat-box input {
   background-color: #FFFFFF;
   border: none;
   border-radius: 50px;
-  width: 80%;
+  width: 85%;
+  padding: 6px 12px;
 }
 
-.search-box input:hover::-webkit-input-placeholder {
+.search-box input:hover::-webkit-input-placeholder, .chat-box input:hover::-webkit-input-placeholder {
   color: cornflowerblue;
   font-weight: 300;
 }
 
-.search-box input:hover:-ms-input-placeholder {
+.search-box input:hover:-ms-input-placeholder, .chat-box input:hover:-ms-input-placeholder {
   color: cornflowerblue;
   font-weight: 300;
 }
 
-.search-box input:hover::-ms-input-placeholder {
+.search-box input:hover::-ms-input-placeholder, .chat-box input:hover::-ms-input-placeholder {
   color: cornflowerblue;
   font-weight: 300;
 }
 
-.search-box input:hover::placeholder {
+.search-box input:hover::placeholder, .chat-box input:hover::placeholder {
   color: cornflowerblue;
   font-weight: 300;
 }
@@ -51,7 +52,7 @@ hr {
   width: 60%;
 }
 
-.row {
+.window {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +64,12 @@ hr {
 
 .main {
   width: 100%;
+  border: lightgrey 1px solid;
+  position: relative;
+}
+
+.sidebar {
+  border: lightgrey 1px solid;
 }
 
 .text-muted {
@@ -96,9 +103,12 @@ hr {
   margin: 10px 15px;
 }
 
-.search-box {
+.search-box, .chat-box {
   background-color: #FAFAFA;
   padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .friend-box {
@@ -128,8 +138,8 @@ hr {
   display: flex;
   vertical-align: baseline;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 10px 1px 10px  grey;
-          box-shadow: 10px 1px 10px  grey;
+  -webkit-box-shadow: 0px 1px 10px  lightgrey;
+          box-shadow: 0px 1px 10px  lightgrey;
 }
 
 .content-msg {
@@ -192,5 +202,21 @@ hr {
   border-left-color: cornflowerblue;
   border-right: 0;
   margin-right: -20px;
+}
+
+.chat-box {
+  background: #eee;
+  padding: 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 19px;
+  bottom: 0;
+  position: absolute;
+  width: 98%;
+}
+
+.chat-box i {
+  margin: 0 5px;
 }
 /*# sourceMappingURL=style.css.map */
