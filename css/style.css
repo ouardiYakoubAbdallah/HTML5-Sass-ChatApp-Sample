@@ -1,4 +1,4 @@
-.setting-tray .setting-nav i, .search-box i {
+.setting-nav i, .search-box i {
   font-size: 25px;
   color: grey;
   -webkit-transition: .3s;
@@ -6,7 +6,7 @@
   vertical-align: middle;
 }
 
-.setting-tray .setting-nav i:hover, .search-box i:hover {
+.setting-nav i:hover, .search-box i:hover {
   color: cornflowerblue;
   cursor: pointer;
 }
@@ -43,6 +43,30 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-rendering: optimizeLegibility;
+  font-family: Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr {
+  margin: 5px auto;
+  width: 60%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main {
+  width: 100%;
+}
+
+.text-muted {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -64,16 +88,58 @@ body {
   border-radius: 7px;
 }
 
-.setting-tray .setting-nav {
+.setting-nav {
   float: right;
 }
 
-.setting-tray .setting-nav i {
+.setting-nav i {
   margin: 10px 15px;
 }
 
 .search-box {
   background-color: #FAFAFA;
   padding: 10px 15px;
+}
+
+.friend-box {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: baseline;
+  background: #FFFFFF;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.friend-box:hover {
+  background: cornflowerblue;
+  cursor: pointer;
+}
+
+.friend-box:hover p, .friend-box:hover h4, .friend-box:hover .time {
+  color: #FFFFFF;
+}
+
+.current-friend-box {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: baseline;
+}
+
+.content-msg {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.content-msg h4 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.content-msg p {
+  margin: 3px;
 }
 /*# sourceMappingURL=style.css.map */
