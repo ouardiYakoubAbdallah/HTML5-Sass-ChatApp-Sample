@@ -1,0 +1,20 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    margin: 60px auto;
+    background: #FFFFFF;
+    padding: 0;
+    border-radius: 5px;
+}
+
+$image-size: 50px;
+.profile-image {
+    width: $image-size;
+    height: $image-size;
+    border-radius: $image-size / 2;
+}
